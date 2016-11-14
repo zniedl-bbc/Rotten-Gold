@@ -1,0 +1,28 @@
+package ch.bbc.rottengold.controller;
+
+import java.util.Collection;
+
+import javax.ejb.EJB;
+
+import ch.bbc.rottengold.ejb.CommentLister;
+import ch.bbc.rottengold.model.Comment;
+
+public class CommentListController {
+	
+	private int id_website = 1;
+
+	@EJB
+	CommentLister commentLister;
+	
+	Collection<Comment> comments = getCommentsViaWebsite();
+
+	@SuppressWarnings("unchecked")
+	private Collection<Comment> getCommentsViaWebsite() {
+		return (Collection<Comment>) commentLister.getCommentsViaWebsite(id_website);
+	}
+
+	private int getWebsiteFromSession(){
+		return 1;
+		
+	}
+}

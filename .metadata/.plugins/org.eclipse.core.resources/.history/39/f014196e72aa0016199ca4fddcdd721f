@@ -1,0 +1,7 @@
+package ch.bbc.rottengold.controller;
+
+public class CommentListController {
+	
+	@EJB
+	CommentLister commentLister;
+}

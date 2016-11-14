@@ -4,26 +4,31 @@ import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
 @Entity
-@NamedQuery(name = "Comment.findAll", query = "SELECT c FROM Comment c")
+@NamedQueries({ 
+	@NamedQuery(name = "Comment.findAll", query = "SELECT c FROM Comment c"),
+	@NamedQuery(name = "Comment.findWithWebsite", query = "SELECT c FROM Comment c WHERE c.id_website = :id_website")
+})
+
 public class Comment implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	private int id;
-	
+
 	private String comment;
-	
+
 	private String title;
-	
+
 	private int id_user;
-	
+
 	private int id_website;
-	
-	public Comment(){
-		
+
+	public Comment() {
+
 	}
 
 	public int getId() {
@@ -65,7 +70,5 @@ public class Comment implements Serializable {
 	public void setId_website(int id_website) {
 		this.id_website = id_website;
 	}
-
-
 
 }

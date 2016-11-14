@@ -1,0 +1,13 @@
+package ch.bbc.rottengold.controller;
+
+import javax.ejb.EJB;
+
+import ch.bbc.rottengold.ejb.CommentLister;
+
+public class CommentListController {
+	
+	@EJB
+	CommentLister commentLister;
+	
+	Collection<Comment> comments = getCommentViaWebsite();
+}
