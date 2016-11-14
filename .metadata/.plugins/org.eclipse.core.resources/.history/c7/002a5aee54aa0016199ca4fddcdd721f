@@ -1,0 +1,5 @@
+package ch.bbc.rottengold.model;
+
+public class Bewertung {
+
+}
