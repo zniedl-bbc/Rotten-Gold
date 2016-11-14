@@ -12,7 +12,7 @@ public class Website implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private int website_id;
+	private int id;
 
 	private String name;
 
@@ -22,12 +22,12 @@ public class Website implements Serializable {
 
 	}
 
-	public int getWebsite_id() {
-		return website_id;
+	public int getId() {
+		return id;
 	}
 
-	public void setWebsite_id(int website_id) {
-		this.website_id = website_id;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -45,5 +45,7 @@ public class Website implements Serializable {
 	public void setUrl(String url) {
 		this.url = url;
 	}
+
+
 
 }

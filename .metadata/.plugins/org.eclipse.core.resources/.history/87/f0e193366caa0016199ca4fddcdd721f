@@ -1,0 +1,18 @@
+package ch.bbc.rottengold.ejb;
+
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class commentLister
+ */
+@Stateless
+public class commentLister implements commentListerLocal {
+
+    /**
+     * Default constructor. 
+     */
+    public commentLister() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

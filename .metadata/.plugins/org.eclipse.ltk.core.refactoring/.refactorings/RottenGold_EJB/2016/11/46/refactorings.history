@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ch.bbc.rottengold.ejb.commentLister.java&apos; to &apos;CommentLister.java&apos;&#x0D;&#x0A;- Original project: &apos;RottenGold_EJB&apos;&#x0D;&#x0A;- Original element: &apos;ch.bbc.rottengold.ejb.commentLister.java&apos;&#x0D;&#x0A;- Renamed element: &apos;ch.bbc.rottengold.ejb.CommentLister.java&apos;" description="Rename compilation unit &apos;commentLister.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/ejbModule&lt;ch.bbc.rottengold.ejb{commentLister.java" name="CommentLister.java" references="false" stamp="1479129252219" version="1.0"/>
+</session>

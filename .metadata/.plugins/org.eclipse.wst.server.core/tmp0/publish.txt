@@ -1,0 +1,3 @@
+#GlassFish 3
+#Mon Nov 14 13:10:40 CET 2016
+org.eclipse.jst.jee.server\:RottenGold_WEB=C\:\\glassfish4\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\RottenGold_WEB
