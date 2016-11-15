@@ -1,0 +1,46 @@
+package ch.bbc.rottengold.controller;
+
+import java.util.Collection;
+
+import javax.annotation.PostConstruct;
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+
+import ch.bbc.rottengold.ejb.CommentBean;
+import ch.bbc.rottengold.model.Comment;
+
+@ManagedBean
+public class CommentController {
+
+	@EJB
+	CommentBean commentLister;
+
+	private Collection<Comment> comments;
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("init");
+	}
+
+	private Collection<Comment> getCommentsViaWebsite() {
+		System.out.println("comments");
+		return (Collection<Comment>) commentLister.getCommentsViaWebsite(getWebsiteFromSession());
+	}
+
+	private int getWebsiteFromSession() {
+		return 1;
+
+	}
+
+	public Collection<Comment> getComments() {
+		if (comments == null) {
+			setComments(getCommentsViaWebsite());
+		}
+		return comments;
+	}
+
+	public void setComments(Collection<Comment> comments) {
+		this.comments = comments;
+	}
+
+}

@@ -1,3 +1,4 @@
 #GlassFish 3
-#Tue Nov 15 08:33:28 CET 2016
+#Tue Nov 15 10:54:06 CET 2016
+org.eclipse.jst.jee.server\:RottenGold_EAR=C\:\\glassfish4\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\RottenGold_EAR
 org.eclipse.jst.jee.server\:RottenGold_WEB=C\:\\glassfish4\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\RottenGold_WEB
